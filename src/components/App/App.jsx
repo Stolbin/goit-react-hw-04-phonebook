@@ -13,8 +13,8 @@ const App = () => {
   const localContacts = JSON.parse(window.localStorage.getItem('contacts'));
   const visibleContacts =
     localContacts.length > 0 ? localContacts : initialContacts;
-  const [filter, setFilter] = useState(visibleContacts);
-  const [contacts, setContacts] = useState('');
+  const [filter, setFilter] = useState('');
+  const [contacts, setContacts] = useState(visibleContacts);
 
   useEffect(() => {
     window.localStorage.getItem('contacts', JSON.stringify(contacts));
@@ -44,7 +44,7 @@ const App = () => {
 
   const getFilterContacts = () => {
     const normalizedFilter = filter.toLowerCase();
-    return contacts.filter.some(contact =>
+    return contacts.filter(contact =>
       contact.name.toLowerCase().includes(normalizedFilter)
     );
   };

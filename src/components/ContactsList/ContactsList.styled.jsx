@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 
 export const List = styled.ul`
-  padding: 10px;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -12,37 +11,50 @@ export const ListItem = styled.li`
   padding: 10px;
   border: 1px solid black;
   border-radius: 8px;
-  display: inline-flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
   background: #fff;
   box-shadow: 3px 3px 5px #696969;
+  @media (min-width: 660px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 `;
 export const BoxContactsList = styled.div`
+  width: 100%;
   display: flex;
-  gap: 20px;
   align-items: center;
   flex-direction: row;
-  margin-left: auto;
+  justify-content: space-between;
+  @media (min-width: 660px) {
+    justify-content: flex-end;
+    gap: 15px;
+  }
 `;
 export const Name = styled.p`
-  max-width: 45%;
+  width: 100%;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 600;
+  @media (min-width: 500px) {
+    font-size: 20px;
+  }
 `;
 export const Numbur = styled.p`
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
+  @media (min-width: 500px) {
+    font-size: 20px;
+  }
 `;
 export const BtnDelete = styled.button`
   padding: 5px;
-  width: 100px;
-  height: 30px;
-  font-size: 16px;
+  width: 80px;
+  font-size: 14px;
   font-weight: 600;
   color: #000000;
   text-align: center;
@@ -52,6 +64,11 @@ export const BtnDelete = styled.button`
   box-shadow: 3px 3px 5px #696969;
   transition: scale 650ms ease, background 650ms ease, color 650ms ease,
     box-shadow 650ms ease;
+  @media (min-width: 500px) {
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+  }
   &:hover {
     scale: 1.02;
     background: #daa82c;

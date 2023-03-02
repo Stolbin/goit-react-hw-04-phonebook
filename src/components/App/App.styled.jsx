@@ -43,6 +43,7 @@ export const BoxContacts = styled.div`
   border-radius: 5px;
   background: #dcdcdc;
   box-shadow: 1px 2px 3px #000000;
+  margin-bottom: 20px;
   @media (min-width: 500px) {
     padding: 15px;
   }

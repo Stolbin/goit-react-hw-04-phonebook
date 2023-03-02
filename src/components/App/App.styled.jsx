@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 export const Container = styled.div`
   width: 100%;
   padding: 12px;
-  margin-top: 20px;
+  margin: 20px 0;
   margin-left: auto;
   margin-right: auto;
   background: #fffaf0;
@@ -43,7 +43,6 @@ export const BoxContacts = styled.div`
   border-radius: 5px;
   background: #dcdcdc;
   box-shadow: 1px 2px 3px #000000;
-  margin-bottom: 20px;
   @media (min-width: 500px) {
     padding: 15px;
   }

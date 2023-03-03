@@ -27,7 +27,6 @@ export const InputName = styled.input`
   width: 65%;
   height: 24px;
   border: none;
-  // margin-top: 15px;
   border-radius: 3px;
   box-shadow: 1px 2px 3px #000000;
   @media (min-width: 660px) {

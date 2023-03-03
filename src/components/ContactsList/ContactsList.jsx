@@ -3,7 +3,7 @@ import {
   List,
   ListItem,
   Name,
-  Numbur,
+  Number,
   BtnDelete,
   BoxContactsList,
 } from './ContactsList.styled';
@@ -14,7 +14,7 @@ const ContactsList = ({ contacts, onDeleteContact }) => (
       <ListItem key={id}>
         <Name>{name}:</Name>
         <BoxContactsList>
-          <Numbur>{number}</Numbur>
+          <Number href={`tel:${number}`}>{number}</Number>
           <BtnDelete type="button" onClick={() => onDeleteContact(id)}>
             Delete
           </BtnDelete>

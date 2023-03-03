@@ -43,10 +43,13 @@ export const Name = styled.p`
     font-size: 20px;
   }
 `;
-export const Numbur = styled.p`
+export const Number = styled.a`
   font-family: 'Poppins', sans-serif;
+  color: black;
   font-size: 18px;
   font-weight: 600;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px #a5988c;
   @media (min-width: 500px) {
     font-size: 20px;
   }

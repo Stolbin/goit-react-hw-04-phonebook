@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import ContactsList from 'components/ContactsList';
-import Phonebook from 'components/Phonebook';
+import Phonebook from '../Phonebook/Phonebook';
 import Filter from 'components/Filter';
 import { nanoid } from 'nanoid';
 import { Container, BoxPhonebook, BoxContacts } from './App.styled';

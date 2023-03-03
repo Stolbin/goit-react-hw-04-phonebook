@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import {
   Form,
   Label,
@@ -58,6 +59,10 @@ const Phonebook = ({ onSubmit }) => {
       <Button type="submit">Add contact</Button>
     </Form>
   );
+};
+
+Phonebook.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
 };
 
 export default Phonebook;

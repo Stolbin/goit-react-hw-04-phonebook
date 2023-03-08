@@ -10,11 +10,13 @@ import SectionTitle from 'components/SectionTitle';
 const initialContacts = { data };
 
 const App = () => {
-  const localContacts = JSON.parse(localStorage.getItem('contacts'));
-  const visibleContacts =
-    localContacts.length > 0 ? localContacts : initialContacts;
+  // const localContacts = JSON.parse(localStorage.getItem('contacts'));
+  // const visibleContacts =
+  //   localContacts.length > 0 ? localContacts : initialContacts;
   const [filter, setFilter] = useState('');
-  const [contacts, setContacts] = useState(visibleContacts);
+  const [contacts, setContacts] = useState(
+    () => JSON.parse(localStorage.getItem('contacts')) ?? initialContacts
+  );
 
   useEffect(() => {
     localStorage.setItem('contacts', JSON.stringify(contacts));

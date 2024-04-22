@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import {
   List,
   ListItem,
@@ -6,7 +6,7 @@ import {
   Number,
   BtnDelete,
   BoxContactsList,
-} from './ContactsList.styled';
+} from "./ContactsList.styled";
 
 const ContactsList = ({ contacts, onDeleteContact }) => (
   <List>
